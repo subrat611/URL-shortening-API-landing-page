@@ -1,0 +1,64 @@
+@use '../../scss/colors' as *;
+@use '../../scss/fonts' as *;
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: $fw-500;
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        
+        .nav-link {
+            cursor: pointer;
+            
+            &:not(:first-child) {
+                margin: 0 1.3rem;
+                color: $neutral-grayish-violet;
+                transition: color 200ms ease-in-out;
+                
+                &:hover {
+                    color: $neutral-dark-violet;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-left: 2rem;
+            }
+
+            .nav-logo {
+                font-size: 1.7rem;
+                font-weight: $fw-700;
+            }
+        }
+    }
+
+    .nav-btn {
+        .nav-btn-login {
+            margin-right: 2rem;
+            color: $neutral-grayish-violet;
+            cursor: pointer;
+            transition: color 200ms ease-in-out;
+              
+            &:hover {
+                color: $neutral-dark-violet;
+            }
+        }
+        .nav-btn-signup {
+            background-color: $primary-cyan;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: $fw-500;
+            color: #ffffff;
+            cursor: pointer;
+            transition: opacity 200ms ease-in-out;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
