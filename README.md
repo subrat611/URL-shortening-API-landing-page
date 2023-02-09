@@ -15,7 +15,7 @@
 
 ## Overview
 
-URL shortening website integrate with [shortcode API](https://shrtco.de/) and browser storage.
+Want to short your url use this URL shortening website integrate with [shortcode API](https://shrtco.de/) and browser storage.
 
 ### The challenge
 
