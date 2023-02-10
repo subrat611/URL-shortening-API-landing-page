@@ -29,4 +29,8 @@ a {
 .App {
     width: 1440px;
     margin: 0 auto;
+
+    .o-app-hero-wrapper {
+        position: relative;
+    }
 }

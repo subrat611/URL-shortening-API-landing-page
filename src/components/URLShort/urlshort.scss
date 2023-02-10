@@ -1,0 +1,65 @@
+@use '../../scss/colors' as *;
+@use '../../scss/fonts' as *;
+
+.url-form-wrapper {
+    position: absolute;
+    bottom: -36%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../../assets/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $primary-dark-violet;
+    width: 80%;
+    height: 23%;
+    border-radius: 7px;
+
+    .url-input-wrapper {
+        position: relative;
+        flex-basis: 80%;
+
+        .url-input {
+            padding: 0.8rem;
+            font-size: 1rem;
+            width: 100%;
+            outline: none;
+            border-radius: 3px;
+            border: transparent;
+            font-family: $font-poppins;
+            font-weight: $fw-500;
+        }
+
+        .url-input-error {
+            position: absolute;
+            bottom: -46%;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: $secondary-red;
+        }
+    }
+
+    .form-submit-btn {
+        outline: none;
+        border: transparent;
+        background-color: $primary-cyan;
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+        border-radius: 7px;
+        font-family: $font-poppins;
+        font-weight: $fw-700;
+        color: #ffffff;
+        cursor: pointer;
+        transition: opacity 200ms ease-in-out;
+
+        &:hover {
+            background-color: hsl(180, 61%, 62%);
+        }
+    }
+}
