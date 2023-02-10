@@ -1,0 +1,51 @@
+@use '../../scss/colors' as *;
+@use '../../scss/fonts' as *;
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+
+    &-left-content {
+        flex-basis: 40%;
+        .hero-title {
+            font-size: 4.5rem;
+            font-weight: $fw-700;
+            line-height: 5.5rem;
+        }
+
+        .hero-desc {
+            margin: 0.2rem 0 2rem 0;
+            font-size: 1.1rem;
+            color: $neutral-grayish-violet;
+            font-weight: $fw-500;
+        }
+
+        .hero-action-btn {
+            outline: none;
+            border: transparent;
+            background-color: $primary-cyan;
+            font-size: 1rem;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-family: $font-poppins;
+            font-weight: $fw-700;
+            color: #ffffff;
+            cursor: pointer;
+            transition: opacity 200ms ease-in-out;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    
+    &-right-content {
+        flex-basis: 50%;
+        
+        .hero-img {
+            width: 100%;
+        }
+    }
+}
