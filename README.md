@@ -1,5 +1,9 @@
 # URL shortening API landing page
 
+### Project Status
+
+<h3><img align="center" height="30" src="https://cdn-icons-png.flaticon.com/128/9677/9677935.png"> Development</h3>
+
 ![desktop-active-states](https://user-images.githubusercontent.com/77252075/217712256-c5fd0ea8-c671-4860-9e47-ffcb9ef407b7.jpg)
 
 ## Table of contents
