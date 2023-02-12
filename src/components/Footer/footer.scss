@@ -1,0 +1,67 @@
+@use '../../scss/colors' as *;
+@use '../../scss/fonts' as *;
+
+
+.footer {
+    background-color: $neutral-dark-violet;
+
+    .footer-wrapper {
+        width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 4rem 0;
+        
+        .footer-logo {
+            flex-basis: 20%;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: $fw-700;
+        }
+    
+        .footer-links {
+            flex-basis: 40%;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+    
+            .feature-links {
+                    .f-link-title {
+                        font-size: 1.2rem;
+                        font-weight: $fw-500;
+                    }
+                    .f-links {
+                        padding: 0 0;
+    
+                        .f-link {
+                            margin: 0.8rem 0;
+                            
+                            &:hover {
+                                cursor: pointer;
+                                color: $primary-cyan;
+                            }
+                        }
+    
+                    }
+            }
+        }
+
+        .footer-social-links {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .f-social-link {
+                margin: 0 1rem;
+                svg {
+                    path {
+                        &:hover {
+                            fill: $primary-cyan;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

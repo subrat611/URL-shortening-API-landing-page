@@ -2,6 +2,8 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import URLShort from "./components/URLShort";
 import StatisticSection from "./components/StatisticSection";
+import BgBoostSection from "./components/BgBoostSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         {/* generated url show here */}
         <StatisticSection />
       </div>
+      <BgBoostSection />
+      <Footer />
     </div>
   );
 }
