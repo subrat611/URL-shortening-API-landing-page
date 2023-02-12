@@ -3,20 +3,21 @@
 
 .url-form-wrapper {
     position: absolute;
-    bottom: -36%;
+    top: -5%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 5%);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background: url(../../assets/bg-shorten-desktop.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     background-color: $primary-dark-violet;
     width: 80%;
-    height: 23%;
+    height: 130px;
     border-radius: 7px;
+    padding: 0 1.5rem;
 
     .url-input-wrapper {
         position: relative;
