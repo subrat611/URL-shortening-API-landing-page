@@ -1,0 +1,41 @@
+@use '../../scss/colors' as *;
+@use '../../scss/fonts' as *;
+
+.bg-boost-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-dark-violet;
+    background-image: url('../../assets/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 2rem 0;
+    max-width: fit-content;
+    min-width: 100%;
+
+    .bg-boost-title {
+        font-size: 2rem;
+        font-weight: $fw-700;
+        color: #ffffff;
+    }
+
+    .bg-boost-action-btn {
+        outline: none;
+        border: transparent;
+        background-color: $primary-cyan;
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        font-family: $font-poppins;
+        font-weight: $fw-700;
+        color: #ffffff;
+        cursor: pointer;
+        transition: opacity 200ms ease-in-out;
+        
+        &:hover {
+            background-color: hsl(180, 61%, 62%);
+        }
+    }
+}
