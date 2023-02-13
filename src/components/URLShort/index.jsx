@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import "./urlshort.scss";
 
-export default function URLShort() {
+export default function URLShort({ dispatch }) {
   const [inputUrl, setInputUrl] = useState("");
   const [inputError, setInputError] = useState(false);
 
@@ -15,6 +15,13 @@ export default function URLShort() {
       const res = await (
         await fetch(`https://api.shrtco.de/v2/shorten?url=${inputUrl}`)
       ).json();
+      dispatch({
+        type: "ADD_SHORT_LINK",
+        payload: {
+          actualLink: inputUrl,
+          shortLink: res.result.full_short_link,
+        },
+      });
     }
   }
 
