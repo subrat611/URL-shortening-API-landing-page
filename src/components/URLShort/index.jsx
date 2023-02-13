@@ -40,7 +40,10 @@ export default function URLShort() {
           type="text"
           className={inputError ? "url-input input-error" : "url-input"}
           placeholder="Shorten a link here..."
-          onChange={(e) => setInputUrl(e.target.value)}
+          onChange={(e) => {
+            setInputError(false);
+            setInputUrl(e.target.value);
+          }}
         />
         <span
           className={inputError ? "url-input-error visible" : "url-input-error"}
