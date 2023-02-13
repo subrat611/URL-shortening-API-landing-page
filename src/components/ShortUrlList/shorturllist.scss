@@ -1,0 +1,69 @@
+@use "../../scss/colors" as *;
+@use "../../scss/fonts" as *;
+
+
+.short-url-list-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 0 0 0;
+    width: 60%;
+    
+    
+    .short-url-list {
+        height: 300px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .list-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+    
+            .list-link {
+                font-weight: $fw-500;
+                font-size: 1.1rem;
+            }
+    
+            .list-short-link {
+                display: flex;
+                align-items: center;
+                
+                .short-list-link {
+                    margin-right: 1.2rem;
+                    color: $primary-cyan;
+                    font-weight: $fw-500;
+                    font-size: 1.1rem;
+                }
+    
+                .list-copy-btn {
+                    outline: none;
+                    border: transparent;
+                    background-color: $primary-cyan;
+                    font-size: 1rem;
+                    padding: 0.5rem 1.8rem;
+                    border-radius: 5px;
+                    font-family: $font-poppins;
+                    font-weight: $fw-700;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: opacity 200ms ease-in-out;
+            
+                    &:hover {
+                        background-color: hsl(180, 61%, 62%);
+                    }
+                }
+            }
+        }
+    }
+
+}
