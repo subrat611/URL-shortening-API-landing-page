@@ -28,21 +28,43 @@
             font-size: 1rem;
             width: 100%;
             outline: none;
-            border-radius: 3px;
+            border-radius: 7px;
             border: transparent;
             font-family: $font-poppins;
             font-weight: $fw-500;
+
+            &.input-error {
+                 border: 2px solid $secondary-red;
+                 
+                 &::placeholder {
+                    color: $secondary-red;
+                    opacity: 1; /* Firefox */
+                  }
+                  
+                  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                   color: $secondary-red;
+                  }
+                  
+                  &::-ms-input-placeholder { /* Microsoft Edge */
+                   color: $secondary-red;
+                  }
+             }
         }
+        
 
         .url-input-error {
+            display: none;
             position: absolute;
             bottom: -46%;
             left: 0;
-            display: inline-block;
             width: 100%;
             font-size: 0.9rem;
             font-style: italic;
             color: $secondary-red;
+
+            &.visible {
+                display: inline-block;
+            }
         }
     }
 
