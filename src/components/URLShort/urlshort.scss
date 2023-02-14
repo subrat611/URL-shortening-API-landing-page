@@ -86,3 +86,39 @@
         }
     }
 }
+
+@media all and (max-width: '375px') {
+    .url-form-wrapper {
+        left: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url(../../assets/bg-shorten-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        background-color: $primary-dark-violet;
+        height: 170px;
+        border-radius: 7px;
+        width: 100vw;
+        padding: 1rem 0;
+
+        .url-input-wrapper {
+            .url-input {
+                &.input-error {
+                }
+            }   
+            
+            .url-input-error {
+                bottom: 8%;
+            }
+        }
+
+
+        .form-submit-btn {
+            width: 90%;
+            margin: 0;
+        }
+    }
+}
