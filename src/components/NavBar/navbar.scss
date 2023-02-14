@@ -64,3 +64,28 @@
         }
     }
 }
+
+@media all and (max-width: '375px') {
+    .navbar-wrapper {
+        margin: 0;
+        width: 100vw;
+
+        .nav-links  {
+            padding: 1rem;
+
+            .nav-link {
+                &:not(:first-child) {
+                   display: none;
+                }
+    
+                .nav-logo {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .nav-btn {
+            display: none;
+        }
+    }
+}
