@@ -105,3 +105,60 @@
         }
     }
 }
+
+@media all and (max-width: '375px') {
+    .statistic-wrapper {
+        width: 100vw;
+        margin: 0;
+        padding: 10rem 0 5rem 0;
+
+
+        .statistic-card-wrapper {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+            height: 100%;
+
+            .statistic-card {
+                margin: 2rem 0;
+                
+            }
+
+            .card--one {
+                align-self: center;
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 3%;
+                    height: 110px;
+                    background-color: $primary-cyan;
+                    z-index: -1;
+                }
+            }
+
+            .card--two {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 3%;
+                    height: 110px;
+                    background-color: $primary-cyan;
+                    z-index: -1;
+                }
+    
+            }
+
+            .card--three {
+                align-self: center;
+            }
+        }
+
+    }
+}
