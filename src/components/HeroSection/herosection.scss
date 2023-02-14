@@ -23,6 +23,9 @@
             color: $neutral-grayish-violet;
             font-weight: $fw-500;
         }
+        .hero-desc-mob {
+            display: none;
+        }
 
         .hero-action-btn {
             outline: none;
@@ -49,5 +52,46 @@
         .hero-img {
             width: 100%;
         }
+    }
+}
+
+@media all and (max-width: '375px') {
+    .hero-wrapper {
+        margin: 0;
+        width: 100vw;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        &-left-content {
+            width: 100%;
+            padding-top: 2rem;
+
+            .hero-title {
+                font-size: 2.5rem;
+                line-height: 2.9rem;
+            }
+
+            .hero-desc {
+               display: none;
+            }
+            .hero-desc-mob {
+                display: block;
+                font-size: 1.2rem;
+                color: $neutral-grayish-violet;
+                font-weight: $fw-500;
+            }
+    
+        }
+
+        &-right-content {
+            width: 100%;
+            overflow: hidden;
+
+            .hero-img {
+                width: 130%;
+                margin-left: 2rem;
+            }
+        }
+
     }
 }

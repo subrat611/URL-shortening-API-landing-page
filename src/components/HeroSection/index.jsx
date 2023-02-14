@@ -15,6 +15,10 @@ export default function HeroSection() {
           Build your brand's recognition and get detailed
           <br /> insights on how your links are performing.
         </p>
+        <p className="hero-desc-mob">
+          Build your brand's recognition and get detailed insights on how your
+          links are performing.
+        </p>
         <button className="hero-action-btn">Get Started</button>
       </div>
       <div className="hero-wrapper-right-content">
