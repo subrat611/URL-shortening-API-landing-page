@@ -61,6 +61,14 @@
                     &:hover {
                         background-color: hsl(180, 61%, 62%);
                     }
+
+                    &.active-btn {
+                        transition: background-color 100ms ease-in-out;
+
+                        &:focus {
+                            background-color: $neutral-dark-blue;
+                        }
+                    }
                 }
             }
         }

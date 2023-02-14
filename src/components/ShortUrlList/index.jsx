@@ -1,7 +1,10 @@
+import { useState } from "react";
+
 import "./shorturllist.scss";
 
 export default function ShortUrlList({ urls }) {
-  console.log(urls);
+  const [activeBtn, setActiveBtn] = useState(null);
+
   return (
     <div className="short-url-list-wrapper">
       <div className="short-url-list">
@@ -10,7 +13,17 @@ export default function ShortUrlList({ urls }) {
             <p className="list-link">{url.actualLink}</p>
             <div className="list-short-link">
               <p className="short-list-link">{url.shortLink}</p>
-              <button className="list-copy-btn">Copy!</button>
+              <button
+                className={
+                  activeBtn === i ? "list-copy-btn active-btn" : "list-copy-btn"
+                }
+                onClick={() => {
+                  setActiveBtn(i);
+                  navigator.clipboard.writeText(url.shortLink);
+                }}
+              >
+                Copy!
+              </button>
             </div>
           </div>
         ))}
