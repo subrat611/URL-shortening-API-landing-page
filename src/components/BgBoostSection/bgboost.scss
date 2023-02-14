@@ -39,3 +39,15 @@
         }
     }
 }
+
+@media all and (max-width: '375px') {
+    .bg-boost-wrapper {
+        width: 100%;
+        background-image: url('../../assets/bg-boost-mobile.svg');
+        background-size: cover;
+
+        .bg-boost-title {
+            font-size: 1.6rem;
+        }
+    }
+}
